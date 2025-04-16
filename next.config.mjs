@@ -13,6 +13,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  basePath: '/WealthFlow',
   eslint: {
     ignoreDuringBuilds: true,
   },
