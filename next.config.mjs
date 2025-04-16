@@ -14,21 +14,12 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/WealthFlow',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
     unoptimized: true,
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  },
+  assetPrefix: '/WealthFlow/',
+  basePath: '/WealthFlow',
+  trailingSlash: true,
 }
 
 if (userConfig) {
