@@ -26,7 +26,7 @@ export default function AboutPage() {
                 <img
                   alt="Financial dashboard"
                   className="object-cover object-center"
-                  src="/placeholder.svg?height=300&width=550&query=financial%20dashboard"
+                  src="/WealthFlow/images/dashboard-preview.png"
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                   <img
                     alt="Venketesh M"
                     className="w-full h-full object-cover"
-                    src="/placeholder.svg?height=200&width=200&query=professional%20portrait"
+                    src="/WealthFlow/images/profile.jpg"
                   />
                 </div>
                 <div className="flex-1 text-center md:text-left">

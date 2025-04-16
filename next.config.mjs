@@ -16,6 +16,8 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './app/image-loader.js'
   },
   assetPrefix: '/WealthFlow/',
   basePath: '/WealthFlow',
