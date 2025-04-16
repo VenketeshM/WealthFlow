@@ -326,11 +326,11 @@ export default function BankingPage() {
                         <div className="space-y-4">
                           <div>
                             <p className="text-sm text-gray-500">Current Balance</p>
-                            <p className="text-xl font-bold text-gray-900">{formatCurrency(card.balance)}</p>
+                            <p className="text-xl font-bold text-gray-900">{formatCurrency(card.balance || 0)}</p>
                           </div>
                           <div>
                             <p className="text-sm text-gray-500">Credit Limit</p>
-                            <p className="text-sm">{formatCurrency(card.limit)}</p>
+                            <p className="text-sm">{formatCurrency(card.limit || 0)}</p>
                           </div>
                           <div className="flex gap-2 pt-2">
                             <Button variant="outline" size="sm" className="rounded-full">
