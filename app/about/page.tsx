@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail, Phone } from "lucide-react"
-
+import { getImagePath } from "@/lib/image-path"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
                 <img
                   alt="Financial dashboard"
                   className="object-cover object-center"
-                  src="/WealthFlow/images/dashboard-preview.png"
+                  src={getImagePath('images/dashboard-preview.png')}
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                   <img
                     alt="Venketesh M"
                     className="w-full h-full object-cover"
-                    src="/WealthFlow/images/profile.jpg"
+                    src={getImagePath('images/profile.jpg')}
                   />
                 </div>
                 <div className="flex-1 text-center md:text-left">

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { getImagePath } from "@/lib/image-path"
 import { Card, CardContent } from "@/components/ui/card"
 
 export default function BlogPage() {
@@ -27,28 +28,28 @@ export default function BlogPage() {
                 title: "10 Tips for Smart Investment in 2025",
                 category: "Investing",
                 date: "April 16, 2025",
-                image: "/WealthFlow/images/blog/investment.jpg",
+                image: getImagePath('images/blog/investment.jpg'),
                 excerpt: "Learn the top investment strategies that will help you grow your wealth in 2025.",
               },
               {
                 title: "Understanding Personal Finance",
                 category: "Finance",
                 date: "April 15, 2025",
-                image: "/WealthFlow/images/blog/personal-finance.jpg",
+                image: getImagePath('images/blog/personal-finance.jpg'),
                 excerpt: "Learn the fundamentals of personal finance and how to manage your money effectively.",
               },
               {
                 title: "Investment Strategies for Beginners",
                 category: "Investing",
                 date: "April 14, 2025",
-                image: "/WealthFlow/images/blog/investment.jpg",
+                image: getImagePath('images/blog/investment.jpg'),
                 excerpt: "A comprehensive guide to help beginners start their investment journey.",
               },
               {
                 title: "Smart Budgeting Tips",
                 category: "Budgeting",
                 date: "April 13, 2025",
-                image: "/WealthFlow/images/blog/budgeting.jpg",
+                image: getImagePath('images/blog/budgeting.jpg'),
                 excerpt: "Discover effective budgeting strategies to help you save more money.",
               },
             ].map((post, i) => (

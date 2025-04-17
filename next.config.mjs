@@ -16,12 +16,11 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    loader: 'custom',
-    loaderFile: './app/image-loader.js'
   },
-  assetPrefix: '/WealthFlow/',
   basePath: '/WealthFlow',
+  assetPrefix: '/WealthFlow/',
   trailingSlash: true,
+  distDir: 'out',
 }
 
 if (userConfig) {
